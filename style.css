@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    outline: none;
+}
+
+body{
+    background-image: linear-gradient(150deg, #05f274,#05f2af, #0582f7);
+    min-height: 100vh;
+}
+
+header, form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 20vh;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+form input , form button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background-color: white;
+}
+
+form .select-btn{
+    outline: none;
+    border: none;
+    margin: 0.5rem;
+    position: relative;
+    overflow: hidden;
+    color: #16683b;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0.6rem;
+}
+
+.select-btn:hover{
+    color: white;
+    background: #16683b;
+}
+
+form button{
+    cursor: pointer;
+    color: #16683b;
+    transition: all 0.3s linear;
+}
+
+form button:hover{
+    background-color: #16683b;
+    color: white;
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem;
+    background: white;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.todo li{
+    flex: 1;
+    padding-left: 1rem;
+}
+.todo button{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    border: none;
+    color: white;
+    transition: all 0.3s linear;
+}
+
+.todo .complete-btn{
+    color: #05f274;
+}
+
+.todo .complete-btn:hover{
+    background-color: #05f274;
+    color: white;
+}
+
+.todo .trash-btn{
+    color: #c55337;
+}
+.todo .trash-btn:hover{
+    background-color: #c55337;
+    color: white;
+}
+
+.checked{
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+.fa-check-square, .fa-trash{
+    pointer-events: none;
+}
+
+.trash-ani{ 
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
